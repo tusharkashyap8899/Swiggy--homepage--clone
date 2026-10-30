@@ -1,0 +1,199 @@
+/* --- Global Resets & Typography --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* --- Header / Navigation Styling --- */
+.navbar {
+    background-color: #fc8019; /* Primary Swiggy Orange */
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-container {
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    gap: 20px;
+}
+
+.location-picker, .search-bar {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.location-picker { flex: 1; }
+.search-bar { flex: 2; }
+
+.location-picker input, .search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+/* --- Hero Banner Section --- */
+.hero-section {
+    background-color: #fc8019; /* Continues full vibrant orange canvas background */
+    padding: 50px 0 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container {
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    gap: 40px;
+}
+
+/* White Feature Service Promo Cards */
+.promo-card {
+    background-color: #ffffff;
+    flex: 1;
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card-info h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #282c3f;
+    letter-spacing: -0.5px;
+}
+
+.card-info .subtitle {
+    font-size: 14px;
+    color: #686b78;
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+.card-info .discount {
+    font-size: 18px;
+    color: #fc8019;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+/* Dynamic Explore Action Buttons */
+.explore-btn {
+    background-color: #fc8019;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s ease;
+}
+
+.explore-btn:hover {
+    background-color: #e66e16;
+}
+
+/* Graphic Art Frame Visual Elements */
+.card-image {
+    width: 180px;
+    height: 180px;
+}
+
+.food-bowl-placeholder, .grocery-basket-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #f4f4f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+}
+
+.grocery-basket-placeholder {
+    border-radius: 20px;
+}
+
+/* --- Bottom Horizontal Category Browse Strip --- */
+.food-options-section {
+    max-width: 1200px;
+    width: 85%;
+    margin: 40px auto;
+}
+
+.section-header h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #282c3f;
+    margin-bottom: 25px;
+}
+
+/* Uniform Clean Categorical Food Item Row Layout */
+.options-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.food-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    min-width: 90px;
+}
+
+.item-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.food-item:hover .item-circle {
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.food-emoji {
+    font-size: 35px;
+}
+
+.food-item p {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #494949;
+}
